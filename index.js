@@ -31,14 +31,14 @@ if (localStorage.product != null) {
 }
 create.onclick = function () {
   var newPro = {
-    title: title.value.toLowerCase(),
+    title: title.value,
     price: price.value,
     taxes: taxes.value,
     ads: ads.value,
-    discount: discount.value || 0,
+    discount: discount.value,
     total: total.innerHTML,
     count: count.value,
-    category: category.value.toLowerCase(),
+    category: category.value,
   };
 
   if (
