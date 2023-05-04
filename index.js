@@ -10,6 +10,8 @@ let create = document.getElementById("submit");
 let deleteAll = document.getElementById("delete-all");
 let mood = "create";
 let tmp;
+let searchMood = "title";
+let search = document.getElementById("search");
 
 function getPrice() {
   if (price.value != "") {
@@ -155,11 +157,11 @@ function updateData(i) {
     top: 0,
     behavior: "smooth",
   });
+  search.value=""
 }
 
 //search
-let searchMood = "title";
-let search = document.getElementById("search");
+
 function searchPro(id) {
   if (id === "searchTitle") {
     searchMood = "title";
