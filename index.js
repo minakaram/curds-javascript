@@ -67,6 +67,8 @@ create.onclick = function () {
     clearData();
   } else if (count.value > 5) {
     alert("the max count is 5");
+  } else {
+    title.focus();
   }
   localStorage.setItem("product", JSON.stringify(dataPro));
   console.log(dataPro);
