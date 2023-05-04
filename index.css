@@ -30,6 +30,7 @@ body {
   .inner-div {
     width: 100%;
     text-align: center;
+    padding-left: 20px;
   }
 }
 
@@ -70,6 +71,13 @@ input:focus {
 
 #total::before {
   content: "Total : ";
+}
+
+@media only screen and (max-width: 800px) {
+
+  span{
+    display: block;
+  }
 }
 
 button {
