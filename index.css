@@ -28,9 +28,8 @@ body {
   }
 
   .inner-div {
-    width: 100%;
+    width: 110%;
     text-align: center;
-    padding-left: 20px;
   }
 }
 
@@ -73,12 +72,6 @@ input:focus {
   content: "Total : ";
 }
 
-@media only screen and (max-width: 800px) {
-
-  span{
-    display: block;
-  }
-}
 
 button {
   width: 100%;
