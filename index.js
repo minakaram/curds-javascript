@@ -192,7 +192,7 @@ function searchData(value) {
             `;
       }
     } else {
-      if (dataPro[i].category.includes(value)) {
+      if (dataPro[i].category.includes(value.toLowerCase())) {
         table += `<tr>
               <td>${i + 1}</td>
               <td>${dataPro[i].title}</td>
