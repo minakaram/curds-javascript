@@ -41,7 +41,12 @@ create.onclick = function () {
     category: category.value.toLowerCase(),
   };
 
-  if (title.value != "" && price.value != "" && category.value != "") {
+  if (
+    title.value != "" &&
+    price.value != "" &&
+    category.value != "" &&
+    count.value < 6
+  ) {
     if (mood === "create") {
       if (newPro.count > 1) {
         for (let i = 0; i < newPro.count; i++) {
@@ -56,9 +61,13 @@ create.onclick = function () {
       count.style.display = "block";
       create.innerHTML = "create";
     }
+    if (dataPro.count > 5) {
+      alert("the max count is 5");
+    }
     clearData();
+  } else if (count.value > 5) {
+    alert("the max count is 5");
   }
-
   localStorage.setItem("product", JSON.stringify(dataPro));
   console.log(dataPro);
 
